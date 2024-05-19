@@ -69,9 +69,9 @@
     display: flex;
     align-items: center;
     border: 1px solid lightgray;
-    padding: 5px;
+    padding: 16px;
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 8px;
   }
   
   .qHeader-input > input {
@@ -85,13 +85,12 @@
     color: gray;
   }
   
-  .qHeader__avatar {
-    cursor: pointer;
-  }
+  
   .qHeader-Rem {
     display: flex;
     align-items: center;
     margin-left: 25px;
+    cursor: pointer;
   }
   
   .qHeader-Rem {
