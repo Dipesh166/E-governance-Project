@@ -7,6 +7,7 @@ import { IoIosNotifications } from "react-icons/io";
 import { RxAvatar } from "react-icons/rx";
 
 import "./CSS/quoraHeader.css"
+import logo from "../assets/nep-gov.gif"
 
 const QuoraHeader = () => {
   return (
@@ -14,6 +15,11 @@ const QuoraHeader = () => {
 
         <div className="qHeader-content">
             <div className="qHeader_logo">
+
+              <img src={logo} alt="logo" />
+
+
+              </div>
                <div className="qHeader-icons">
                <div className="qHeader-icon">
                 <FaHome/>
@@ -37,6 +43,7 @@ const QuoraHeader = () => {
                <div className='qHeader-input'>
 
                 <FaSearch/>
+                
                 <input type="text" placeholder='search complaints' />
                 
                </div>
@@ -44,9 +51,11 @@ const QuoraHeader = () => {
                <RxAvatar />
                </div>
 
+             
              <button > Add Complaints</button>
+             
               
-            </div>
+            
         </div>
         
     </div>
