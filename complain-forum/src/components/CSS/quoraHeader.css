@@ -116,7 +116,7 @@
   
   .qHeader-Rem  {
     color: white;
-    background: #222;
+    background: white;
     text-transform: inherit;
     border-radius: 5px;
     margin-left: 25px;
@@ -124,7 +124,7 @@
   
   .qHeader-Rem:hover {
     color: #222;
-    background: rgb(214, 214, 214);
+    background: white;
   }
   .modal__title {
     display: flex;

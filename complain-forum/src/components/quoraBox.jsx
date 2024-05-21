@@ -1,15 +1,15 @@
 import React from 'react'
-import { RxAvatar } from "react-icons/rx";
+import {Avatar} from "@mui/material"
 import "./CSS/quoraBox.css"
 
 const QuoraBox = () => {
   return (
     <div className="quoraBox">
       <div className="quoraBox__info">
-      <RxAvatar />
+     <Avatar/>
       </div>
       <div className="quoraBox__quora">
-        <p>What is your Complaints ?</p>
+        <h5>What is your Complaints ?</h5>
       </div>
     </div>
   )

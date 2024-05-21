@@ -4,8 +4,7 @@ import { FaHome, FaSearch,  } from "react-icons/fa";
 import { MdOutlineFeaturedPlayList, MdOutlineAssignment } from "react-icons/md";
 import { IoPeople } from "react-icons/io5";
 import { IoIosNotifications } from "react-icons/io";
-import { RxAvatar } from "react-icons/rx";
-
+import {Avatar} from "@mui/material"
 import "./CSS/quoraHeader.css"
 import logo from "../assets/nep-gov.gif"
 
@@ -48,7 +47,7 @@ const QuoraHeader = () => {
                 
                </div>
                <div className="qHeader-Rem">
-               <RxAvatar />
+               <Avatar/>
                </div>
 
              

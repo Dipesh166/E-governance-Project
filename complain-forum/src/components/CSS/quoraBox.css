@@ -6,7 +6,7 @@
     border: 1px solid lightgray;
     border-radius: 5px;
     cursor: pointer;
-    max-width: 700px;
+    width: 500px;
 }
 
 .quoraBox:hover{
@@ -19,6 +19,15 @@
     align-items: center;
 }
 
-.quoraBox__info >p{
+.quoraBox__quora >h5{
     color: rgb(129,129,129);
+    font-weight: 300;
+    margin-left:10px ;
+    font-size: large;
+}
+
+.quoraBox__quora{
+    display: flex;
+    margin-top: 8px;
+
 }
