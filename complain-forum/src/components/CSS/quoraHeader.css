@@ -240,7 +240,7 @@
   }
 
 
-button{
+ button{
   padding: 8px;
   margin: 10px;
   color: white;
@@ -248,10 +248,10 @@ button{
   border-radius: 8px;
   border: 1px solid gray;
   
-}
+ }
 
-button:hover{
+ button:hover{
   color: black;
   background-color: rgb(212, 193, 193);
   border-radius: 1px solid black;
-}
+ }
