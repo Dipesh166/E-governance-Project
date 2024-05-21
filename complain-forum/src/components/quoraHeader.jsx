@@ -1,16 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-import { FaHome, FaSearch,  } from "react-icons/fa";
-import { MdOutlineFeaturedPlayList, MdOutlineAssignment } from "react-icons/md";
+import { Avatar, Input } from "@mui/material";
+import { FaHome, FaSearch, } from "react-icons/fa";
+import { IoIosNotifications, IoMdArrowDropdown, IoMdClose } from "react-icons/io";
 import { IoPeople } from "react-icons/io5";
-import { IoIosNotifications } from "react-icons/io";
-import {Avatar, Input} from "@mui/material"
-import "./CSS/quoraHeader.css"
-import logo from "../assets/nep-gov.gif"
-import Modal from "react-responsive-modal"
-import { IoMdClose, IoMdArrowDropdown } from "react-icons/io";
+import { MdOutlineAssignment, MdOutlineFeaturedPlayList, MdOutlinePeopleAlt } from "react-icons/md";
+import Modal from "react-responsive-modal";
 import 'react-responsive-modal/styles.css';
-import { MdOutlinePeopleAlt } from "react-icons/md";
+import logo from "../assets/nep-gov.gif";
+import "./CSS/quoraHeader.css";
 
 
 
@@ -19,6 +17,8 @@ const QuoraHeader = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false)
   const Close = (<IoMdClose />)
+
+  const [inputUrl, setInputUrl] = useState("")
   return (
     <div className='qHeader'>
 
@@ -91,14 +91,37 @@ const QuoraHeader = () => {
                 </div>
 
               </div>
-              <div className="modal__Fiels">
+              <div className="modal__Field">
                 <Input type='text'  placeholder='Write Your Complain in detail'/>
                 <div style={{
                   display:"flex",
                   flexDirection:"column"
 
                 }}>
-                  <input  type='text' placeholder='Optional:include a link that give context'/>
+                  <input 
+                  value={inputUrl}
+                  onChange={(e)=> setInputUrl(e.target.value)}
+                  style={{
+                    margin:"5px 0",
+                    border:"1px solid lightgray",
+                    padding:"10px",
+                    outline:"2px solid #000",
+
+
+
+                  }}
+                   type='text' 
+                  placeholder='Optional:include a link that give context'/>
+                  {
+                    inputUrl !== "" &&  <img 
+                    style={{
+                      height:"40vh",
+                      objectFit:"contain",
+
+                    }}
+                    src={inputUrl} alt="display-image" />
+                  }
+                 
 
 
                 </div>
