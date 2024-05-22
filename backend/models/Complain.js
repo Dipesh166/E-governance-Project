@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 
-const Complainschema = new mongoose.schema({
+
+
+const Complainschema = new mongoose.Schema({
     complainName:String,
     complainUrl:String,
     createdAt:{
@@ -15,4 +17,4 @@ const Complainschema = new mongoose.schema({
 
 })
 
-module.exports = mongoose.model("Complains", Complainschema )
+module.exports = mongoose.model("Complains", Complainschema );
